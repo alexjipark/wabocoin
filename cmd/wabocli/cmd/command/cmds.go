@@ -55,6 +55,8 @@ func doSendTx (cmd *cobra.Command, args []string) error {
 		Tx: tx,
 	}
 
+	send.AddSigner(tx2.GetSigner())
+
 	
 
 
